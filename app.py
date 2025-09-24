@@ -40,7 +40,7 @@ model = Model(cost + penalty)
 
 # ソルバーの設定
 client = FixstarsClient()
-client.token = 'AE/zqJVysWXe6iax5u0vmCips7tmGPdIK0i' # アクセストークンを入力
+client.token = 'AE/HKoyan2hbF9m2O1W3qLvhn583BV4mYJN' # アクセストークンを入力
 client.parameters.timeout = timedelta(milliseconds=1000)  # タイムアウト 1000 ミリ秒
 
 # ↓↓ここから解答コード↓↓
