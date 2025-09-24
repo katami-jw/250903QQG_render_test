@@ -5,7 +5,7 @@ from datetime import timedelta
 import math
 
 #テキスト表示
-st.title('荷物を均等に分けよう')
+st.title('📦荷物を均等に分けよう📦')
 st.write('荷物の重さ、分ける数を入力してSQAを実行')
 
 col1,col2= st.columns(2)
@@ -17,7 +17,7 @@ with col1:
     N = len(w)
 
     # 荷物の重さを表示★
-    st.write('荷物の重さ')
+    st.write('⚖️荷物の重さ')
     st.data_editor(w)
 
 with col2:
@@ -42,6 +42,8 @@ model = Model(cost + penalty)
 client = FixstarsClient()
 client.token = 'AE/zqJVysWXe6iax5u0vmCips7tmGPdIK0i' # アクセストークンを入力
 client.parameters.timeout = timedelta(milliseconds=1000)  # タイムアウト 1000 ミリ秒
+
+# ↓↓ここから解答コード↓↓
 
 # 実行ボタンを表示★
 button = st.button('SQAを実行')
