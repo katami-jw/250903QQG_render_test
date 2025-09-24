@@ -8,11 +8,6 @@ import math
 st.title('荷物を均等に分けよう')
 st.write('荷物の重さ、分ける数を入力してSQAを実行')
 
-#サイドバー設定
-with st.sidebar:
-    st.write('計算のパラメーター設定')
-    time_calc = st.number_input('タイムアウト時間',max_value = 10000, value = 1000, step = 1000)
-
 col1,col2= st.columns(2)
 
 with col1:
